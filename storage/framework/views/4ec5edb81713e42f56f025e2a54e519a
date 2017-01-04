@@ -1,0 +1,27 @@
+<?php
+require_once(public_path() ."/phpGrid_Lite/conf.php");
+?>
+<html>
+	<head>
+		<title>Laravel</title>
+		<style>
+		#orders{
+			font-size:10px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+
+			<?php
+			$dg = new C_DataGrid("SELECT * FROM orders", "orderNumber", "orders");
+			$dg->enable_edit("FORM", "CRUD");
+			$dg->set_dimension(800, 400);
+			$dg->display();
+			?>
+
+			</div>
+		</div>
+	</body>
+</html>

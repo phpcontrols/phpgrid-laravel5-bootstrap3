@@ -1,0 +1,3 @@
+Place the phpGrid files in this folder. 
+
+You can purchase the full version (recommended), or use the free Lite version (read-only) from http://phpgrid.com/download.

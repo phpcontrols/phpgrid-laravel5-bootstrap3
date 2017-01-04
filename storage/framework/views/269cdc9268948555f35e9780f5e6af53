@@ -1,0 +1,10 @@
+<?php $__env->startSection('content'); ?>
+	<?php echo $grid; ?>
+
+<?php $__env->stopSection(); ?>
+
+<style>
+#orders{font-size:inherit;}
+</style>
+
+<?php echo $__env->make('admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,15 @@
+<?php require_once(public_path() ."/phpGrid_Lite/conf.php"); ?>
+
+
+
+<?php $__env->startSection('content'); ?>
+<?php
+$dg = new C_DataGrid("SELECT * FROM orders", "orderNumber", "orders");
+$dg->enable_edit("FORM", "CRUD");
+$dg->set_dimension(800, 400);
+$dg->display();
+?>
+<?php echo $__env->yieldSection(); ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
